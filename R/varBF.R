@@ -14,7 +14,9 @@
 #' 
 #' @author Martin Papenberg \email{martin.papenberg@@hhu.de}
 #'
+#' 
+#'
 
-varBF <- function(x, y, ...) {
+depvarBF <- function(x, y, ...) {
   extractBF(correlationBF(x - y, x + y, ...), onlybf = TRUE)
 }
