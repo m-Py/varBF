@@ -6,15 +6,16 @@ library("roxyPackage")
 pckg.dscrptn <- data.frame(
   Package = "varBF",
   Type = "Package",
-  Title = "Bayes factor for the comparison of dependent variances",
+  Author = "Martin Papenberg",
+  Title = "Bayes factors for the comparison variances",
   AuthorsR = "c(person(given='Martin', family='Papenberg',
        email='martin.papenberg@hhu.de', role=c('aut', 'cre', 'cph')))",
-  Description="Compute a Bayes factor for the comparison of dependent variances",
+  Description="Compute Bayes factors for the comparison of variances",
   License="MIT + file LICENSE",
   Encoding="UTF-8",
   LazyData = "true",
   stringsAsFactors = FALSE,
-  Imports = "BayesFactor",
+  Imports = "BayesFactor, car",
   Depends = "R (>= 3.4.0)"
 )
 

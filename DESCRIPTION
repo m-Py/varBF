@@ -1,12 +1,12 @@
 Package: varBF
 Type: Package
-Title: Bayes factor for the comparison of dependent variances
-Description: Compute a Bayes factor for the comparison of dependent
-        variances
+Author: Martin Papenberg
+Title: Bayes factors for the comparison variances
+Description: Compute Bayes factors for the comparison of variances
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: BayesFactor
+Imports: BayesFactor, car
 Depends: R (>= 3.4.0)
 Authors@R: c(person(given='Martin', family='Papenberg',
         email='martin.papenberg@hhu.de', role=c('aut', 'cre', 'cph')))
