@@ -14,9 +14,12 @@
 #' 
 #' @author Martin Papenberg \email{martin.papenberg@@hhu.de}
 #'
+#' @examples
 #' 
+#' depvarBF(sleep$extra[sleep$group == 1], sleep$extra[sleep$group == 2])
+#' depvarBF(iris$Sepal.Length, iris$Petal.Width)
 #'
 
 depvarBF <- function(x, y, ...) {
-  extractBF(correlationBF(x - y, x + y, ...), onlybf = TRUE)
+  extractBF(correlationBF(x + y, x - y, ...), onlybf = TRUE)
 }

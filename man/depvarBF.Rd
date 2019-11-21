@@ -19,6 +19,12 @@ The bayes factor
 \description{
 Compute a Bayes Factor for the comparison of dependent variances
 }
+\examples{
+
+depvarBF(sleep$extra[sleep$group == 1], sleep$extra[sleep$group == 2])
+depvarBF(iris$Sepal.Length, iris$Petal.Width)
+
+}
 \author{
 Martin Papenberg \email{martin.papenberg@hhu.de}
 }
