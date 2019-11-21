@@ -4,14 +4,14 @@
 \alias{depvarBF}
 \title{Compute a Bayes Factor for the comparison of dependent variances}
 \usage{
-depvarBF(x, y, ...)
+depvarBF(x, y, rscale = "medium")
 }
 \arguments{
 \item{x}{first continuous variable}
 
 \item{y}{second continuous variable}
 
-\item{...}{further arguments passed to \code{\link[BayesFactor]{correlationBF}}}
+\item{rscale}{The prior width, passed to \code{\link[BayesFactor]{correlationBF}}}
 }
 \value{
 The bayes factor

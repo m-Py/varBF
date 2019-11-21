@@ -3,7 +3,7 @@
 #' 
 #' @param x first continuous variable
 #' @param y second continuous variable
-#' @param ... further arguments passed to \code{\link[BayesFactor]{correlationBF}}
+#' @param rscale The prior width, passed to \code{\link[BayesFactor]{correlationBF}}
 #' 
 #' 
 #' @importFrom BayesFactor correlationBF extractBF
@@ -18,8 +18,9 @@
 #' 
 #' depvarBF(sleep$extra[sleep$group == 1], sleep$extra[sleep$group == 2])
 #' depvarBF(iris$Sepal.Length, iris$Petal.Width)
+#' depvarBF(iris$Sepal.Length, iris$Petal.Width, rscale = "ultrawide")
 #'
 
-depvarBF <- function(x, y, ...) {
-  extractBF(correlationBF(x + y, x - y, ...), onlybf = TRUE)
+depvarBF <- function(x, y, rscale = "medium") {
+  extractBF(correlationBF(x + y, x - y, rscale = rscale), onlybf = TRUE)
 }
