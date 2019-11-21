@@ -1,8 +1,11 @@
 Package: varBF
 Type: Package
 Author: Martin Papenberg
-Title: Bayes factors for the comparison variances
-Description: Compute Bayes factors for the comparison of variances
+Title: Bayes factors for the comparison of variances
+Description: Compute Bayes factors for the comparison of variances.
+        Offers a Bayes factor for the comparison of independent
+        variances and a Bayes factor for the comparison of dependent
+        variances. Uses the package BayesFactor for computations.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
