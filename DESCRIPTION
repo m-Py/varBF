@@ -1,0 +1,15 @@
+Package: varBF
+Type: Package
+Title: Bayes factor for the comparison of dependent variances
+Description: Compute a Bayes factor for the comparison of dependent
+        variances
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: BayesFactor
+Depends: R (>= 3.4.0)
+Authors@R: c(person(given='Martin', family='Papenberg',
+        email='martin.papenberg@hhu.de', role=c('aut', 'cre', 'cph')))
+Version: 0.0.1
+Date: 2019-11-21
+RoxygenNote: 6.1.1
