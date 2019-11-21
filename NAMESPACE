@@ -2,3 +2,4 @@
 
 export(varBF)
 importFrom(BayesFactor,correlationBF)
+importFrom(BayesFactor,extractBF)

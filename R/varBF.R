@@ -6,7 +6,7 @@
 #' @param ... further arguments passed to \code{\link[BayesFactor]{correlationBF}}
 #' 
 #' 
-#' @importFrom BayesFactor correlationBF
+#' @importFrom BayesFactor correlationBF extractBF
 #' 
 #' @return The bayes factor
 #'
@@ -16,5 +16,5 @@
 #'
 
 varBF <- function(x, y, ...) {
-  NULL
+  extractBF(correlationBF(x - y, x + y, ...), onlybf = TRUE)
 }
