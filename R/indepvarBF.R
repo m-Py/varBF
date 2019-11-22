@@ -47,7 +47,7 @@ indepvarBF <- function(x, y, rscale = "medium") {
     exp(
       oneWayAOV.Fstat(
         F = levene[["F value"]], 
-        N = min(length(x), length(y)), 
+        N = floor((length(x) + length(y)) / 2), 
         J = 2, 
         rscale = rscale
       )$bf
