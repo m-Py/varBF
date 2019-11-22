@@ -11,11 +11,12 @@ indepvarBF(x, y, rscale = "medium")
 
 \item{y}{second continuous variable}
 
-\item{rscale}{The prior width, passed to \code{\link[BayesFactor]{oneWayAOV.Fstat}}}
+\item{rscale}{The prior width specifying the alternative hypothesis, 
+passed to \code{\link[BayesFactor]{oneWayAOV.Fstat}}}
 }
 \value{
-The bayes factor favoring the alternative hypothesis as 
-    compared to the null hypothesis
+The Bayes factor quantifying the degree to which 
+    the alternative hypothesis is favored over the null hypothesis
 }
 \description{
 Compute a Bayes Factor for the comparison of independent variances

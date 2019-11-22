@@ -3,13 +3,14 @@
 #' 
 #' @param x first continuous variable
 #' @param y second continuous variable
-#' @param rscale The prior width, passed to \code{\link[BayesFactor]{oneWayAOV.Fstat}}
+#' @param rscale The prior width specifying the alternative hypothesis, 
+#'      passed to \code{\link[BayesFactor]{oneWayAOV.Fstat}}
 #'
 #' @importFrom car leveneTest
 #' @importFrom BayesFactor oneWayAOV.Fstat
 #' 
-#' @return The bayes factor favoring the alternative hypothesis as 
-#'     compared to the null hypothesis
+#' @return The Bayes factor quantifying the degree to which 
+#'     the alternative hypothesis is favored over the null hypothesis
 #'
 #' @export
 #' 
