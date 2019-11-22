@@ -8,7 +8,8 @@
 #' @importFrom car leveneTest
 #' @importFrom BayesFactor oneWayAOV.Fstat
 #' 
-#' @return The bayes factor
+#' @return The bayes factor favoring the alternative hypothesis as 
+#'     compared to the null hypothesis
 #'
 #' @export
 #' 

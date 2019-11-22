@@ -14,5 +14,5 @@ Depends: R (>= 3.4.0)
 Authors@R: c(person(given='Martin', family='Papenberg',
         email='martin.papenberg@hhu.de', role=c('aut', 'cre', 'cph')))
 Version: 0.0.1
-Date: 2019-11-21
+Date: 2019-11-22
 RoxygenNote: 6.1.1
